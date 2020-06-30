@@ -1,0 +1,7 @@
+rain fall
+sun rise
+sun set
+lightning
+thunderstrom
+rain
+weather
