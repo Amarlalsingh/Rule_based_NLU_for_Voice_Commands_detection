@@ -1,0 +1,64 @@
+case:1
+Day : tomorrow
+Time :  9 o clock
+Target Event : make tomorrow 9 O clock morning event
+CreateEventWithTime
+case:2
+Place : bangalore
+Day : tomorrow
+Time :  9:30 p.m.
+CreateEventWithTimeAndPlace
+case:3
+Day : tomorrow
+Alarm Name : set a team lunch 
+Time :  11 am
+CreateAlarmByName
+case:4
+Name : amitabh
+CallByName
+case:5
+Name : dravid
+Name : rahul
+SendEmail
+case:6
+Place : new york
+WeatherInCity
+case:7
+Place : bangalore
+Day : tomorrow
+Time :  6 a.m.
+WeatherTimeCity
+case:8
+Place : london
+DateTimeInPlace
+case:9
+DateTimeNow
+case:10
+Day : today
+book_ticket
+case:11
+Place : bangalore
+Day : february
+Place : ranchi
+CreateEventWithTime
+case:12
+Day : tomorrow
+Alarm Name : build body 
+Time :  5 a.m.
+CreateAlarmByName
+case:13
+Day : tomorrow
+Alarm Name :  go to make money
+Time :  8 a.m.
+CreateAlarmByName
+case:14
+Note Name :  shopping list
+Note Content : write milk egg butter
+CreateNoteWithTimeAndContent
+case:15
+Note Name : trip expanse
+Note Content :  100 dollar for patrol for me
+CreateNoteWithTimeAndContent
+case:16
+Target Event : monkey in market
+RenameEvent

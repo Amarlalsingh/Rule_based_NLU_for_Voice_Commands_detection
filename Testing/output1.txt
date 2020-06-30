@@ -1,0 +1,106 @@
+case:1
+Place : los angeles
+book_ticket
+case:2
+CreateNoteWithTimeAndContent
+case:3
+Place : ahmedabad
+Place : lakhnau
+book_ticket
+case:4
+Name : nirav
+Name : modi
+CallByName
+case:5
+Name : nirav
+Name : singh
+CallByName
+case:6
+Day : today
+Alarm Name : make 
+Time :  9 a.m.
+CreateAlarmByName
+case:7
+Day : tomorrow
+Time :  9 o clock
+Alarm Name : make 
+CreateAlarmByName
+case:8
+Time :  4:40 o clock
+Alarm Name : produce 
+CreateEventWithTime
+case:9
+Time :  4:40 o clock
+Alarm Name : produce 
+CreateEventWithTime
+case:10
+Time :  4 o clock
+RenameEvent
+case:11
+Time :  4 o clock
+RenameEvent
+case:12
+Time :  2:30 p.m.
+RenameEvent
+case:13
+Place : ahmedabad
+Day : today
+Time :  8 p.m.
+CreateEventWithTimeAndPlace
+case:14
+Note Name :  read
+Note Content : write and write chicken
+CreateNoteWithTimeAndContent
+case:15
+Note Name :  read
+Note Content : write and write chicken
+CreateNoteWithTimeAndContent
+case:16
+Note Name : 
+Note Content :  question and answer and save
+Note Name : 
+Note Content :  question and answer and save
+Note Name : 
+Note Content :  question and answer and save
+CreateNoteWithTimeAndContent
+case:17
+Note Name : 
+Note Content :  question and answer
+Note Name : 
+Note Content :  question and answer
+Note Name : 
+Note Content :  question and answer
+CreateNoteWithTimeAndContent
+case:18
+Place : new delhi
+Place : taj mahal
+Target Event : jack in new delhi
+RenameEvent
+case:19
+Target Event : lunch
+CreateNoteWithTimeAndContent
+case:20
+Name : raghav
+Name : kumar
+SendEmail
+case:21
+CreateEventWithTime
+case:22
+Name : raghav
+Name : kumar
+SendEmail
+case:23
+Place : los angeles
+book_ticket
+case:24
+CallByName
+case:25
+Time :  7 o clock
+CallByName
+case:26
+Time :  9 o clock
+WeatherInCity
+case:27
+Place : los angeles
+Time :  9 o clock
+WeatherInCity
