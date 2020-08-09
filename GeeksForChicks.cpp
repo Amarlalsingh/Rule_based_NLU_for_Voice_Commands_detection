@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 #include<ctype.h>
 using namespace std;
-//my debugging template
+//Our debugging template
+
 template < typename F, typename S >
 ostream& operator << ( ostream& os, const pair< F, S > & p ) {
     return os << "(" << p.first << ", " << p.second << ")";
@@ -36,6 +37,7 @@ ostream &operator << ( ostream & os, const map< F, S > &v ) {
     }
     return os << "]";
 }
+
 #define deb(x) cerr << #x << " = " << x << endl;
 
 //LCS FUNCTION
@@ -62,7 +64,8 @@ int LCSubStr(string X, string Y, int m, int n)
     return result;
 }
 
-int similarity (string x, string y)//to find the similarity between 2 strings
+//to calculate the similarity between 2 strings
+int similarity (string x, string y)
 {
   return LCSubStr(x, y, x.size(), y.size());
 }
@@ -71,6 +74,7 @@ vector<vector<string> > record(1000);
 
 int main()
 {
+// ------------------------------------------ REFER - Comand Names -------------------------------------------------	
   vector<string> refer;
   refer.push_back("book_ticket");
   refer.push_back("CallByName");
@@ -78,7 +82,7 @@ int main()
   refer.push_back("CreateAlarmWithTime");
   refer.push_back("CreateEventWithTime");
   refer.push_back("CreateEventWithTimeAndPlace");
-  refer.push_back("CreateNoteWithTimeAndContent");			//refer - these are all command names
+  refer.push_back("CreateNoteWithTimeAndContent");			
   refer.push_back("DateTimeInPlace");
   refer.push_back("DateTimeNow");
   refer.push_back("RenameEvent");
@@ -88,6 +92,7 @@ int main()
  cout<<"Printing refer file\n\n";
   deb(refer);
   cout<<"\n\n";
+// ------------------------------------------HEADERS - Concept Headers-------------------------------------------------	
   vector<vector<string> > header(19);
   header[0].push_back("book_concept");
   header[1].push_back("call_concept");
@@ -95,7 +100,7 @@ int main()
   header[3].push_back("email_concept");
   header[4].push_back("message_concept");
   header[5].push_back("name_concept");
-                                                        // header - these all concept headers
+                                                        
   header[6].push_back("search_concept");
   header[6].push_back("search");
 
@@ -118,7 +123,7 @@ int main()
 
   header[17].push_back("event");
   header[18].push_back("now");
-
+//---------------------------------------------------------------------------------------------------------------------------
 cout<<"Printing header file\n\n";
 deb(header);
 cout<<"\n\n";
@@ -142,11 +147,9 @@ cout<<"\n\n";
     while (getline(filin_input[i], line))
     {
       record[i].push_back(line);
-    //  cout<<line<<endl;
     }
-    //cout<<endl;
   }
-  filin_input[12].open("PlaceHolder/contact_name.txt");		// used different file
+  filin_input[12].open("PlaceHolder/contact_name.txt");		                // used different file
   filin_input[13].open("PlaceHolder/places.txt");				//used places_edited instead of places
   while (getline(filin_input[12], line))
   {
@@ -156,7 +159,7 @@ cout<<"\n\n";
     {
       record[12].push_back(item);
     }
-   // cout<<line<<endl;
+  
   }
   //cout<<record[12].size();
   //cout<<endl;
@@ -487,13 +490,6 @@ cout<<"Printing record vector\n\n";
     }
     else
       s[0]='0';
-    //cout<<endl;
-
-    /*for(int i=0;i<19;i++)
-    {
-      cout<<s[i]<<" ";
-    }
-    cout<<endl;*/
 
     int flag=0;
     int sim_indx = -1;
@@ -503,8 +499,6 @@ cout<<"Printing record vector\n\n";
     {
       for(int n=0;n<rec_out[m].size();n++)
       {
-        //cout<<refer[m]<<endl;
-        //flag=1;
         sim_indx = similarity(rec_out[m][n], s);
         if(sim_indx > max_sim_index)
         {
